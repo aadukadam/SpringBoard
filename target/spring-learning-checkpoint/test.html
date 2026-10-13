@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Write a summary of Spring Core, Spring JDBC, and Hibernate and receive a learning score.">
+    <title>Knowledge check | Springboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="test.js" defer></script>
+</head>
+<body class="subpage">
+<header class="site-header">
+    <a class="brand" href="about.html"><span class="brand-mark">S</span><span>Spring<span class="brand-light">board</span></span></a>
+    <a class="header-link" href="about.html">← Back to the guide</a>
+</header>
+<main class="narrow-shell">
+    <div class="eyebrow"><span class="eyebrow-dot"></span> STEP 01 · KNOWLEDGE CHECK</div>
+    <h1 class="page-title">Put it into <span class="serif-accent">your words.</span></h1>
+    <p class="page-intro">Tell us a little about yourself, then summarize what you learned. Your summary should be 50–100 words.</p>
+    <div class="progress-track" aria-label="Step 1 of 2"><span></span></div>
+    <form id="assessment-form" class="panel form-card" action="verification.jsp" method="post">
+        <div class="form-section-title"><span class="form-step">01</span><div><h2>Your details</h2><p>Just enough to personalize your result.</p></div></div>
+        <div class="field-grid">
+            <label class="field"><span>Full name</span><input name="name" type="text" autocomplete="name" placeholder="e.g. Aditi Kadam" minlength="2" maxlength="80" required></label>
+            <label class="field"><span>Email address</span><input name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="120" required></label>
+            <label class="field field-wide"><span>Mobile number <small>10-digit Indian mobile number</small></span><input name="mobile" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="9876543210" pattern="[6-9][0-9]{9}" maxlength="10" required></label>
+        </div>
+        <div class="form-divider"></div>
+        <div class="form-section-title"><span class="form-step">02</span><div><h2>Your learning summary</h2><p>Connect the ideas across all three topics.</p></div></div>
+        <label class="field summary-field"><span>What did you learn?</span><textarea id="summary" name="summary" rows="7" maxlength="2000" placeholder="In your own words, explain Spring Core, Spring JDBC, and Hibernate..." required></textarea></label>
+        <div class="summary-meta"><span>Explain concepts from at least two topics; topic names alone do not count.</span><strong id="word-count" aria-live="polite">0 / 100 words</strong></div>
+        <div class="form-hint"><span aria-hidden="true">✦</span> Include concepts such as dependency injection, JdbcTemplate, RowMapper, ORM, or entities. Score: 1–49 relevant words = 5 · 50–89 = 7 · 90–99 = 9 · exactly 100 with all three topics = 10</div>
+        <button class="button button-primary button-full" type="submit">Continue to verification <span aria-hidden="true">→</span></button>
+        <p class="privacy-note">Your details are used only to verify your submission and show your result.</p>
+    </form>
+    <p id="runtime-warning" class="runtime-warning" role="status" hidden></p>
+    <footer class="page-footer">Written by Aditi Kadam <span>·</span> Spring learning checkpoint</footer>
+</main>
+</body>
+</html>
