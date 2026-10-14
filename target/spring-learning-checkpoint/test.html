@@ -26,8 +26,39 @@
             <label class="field field-wide"><span>Mobile number <small>10-digit Indian mobile number</small></span><input name="mobile" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="9876543210" pattern="[6-9][0-9]{9}" maxlength="10" required></label>
         </div>
         <div class="form-divider"></div>
-        <div class="form-section-title"><span class="form-step">02</span><div><h2>Your learning summary</h2><p>Connect the ideas across all three topics.</p></div></div>
-        <label class="field summary-field"><span>What did you learn?</span><textarea id="summary" name="summary" rows="7" maxlength="2000" placeholder="In your own words, explain Spring Core, Spring JDBC, and Hibernate..." required></textarea></label>
+        <div class="form-section-title"><span class="form-step">02</span><div><h2>Your course focus</h2><p>Choose the topic you want to reflect in your summary.</p></div></div>
+        <label class="field field-wide course-field">
+            <span>Which course are you reviewing?</span>
+            <select id="course" name="course" required>
+                <option value="Spring Core">Spring Core</option>
+                <option value="Spring JDBC">Spring JDBC</option>
+                <option value="Hibernate">Hibernate</option>
+            </select>
+        </label>
+        <div class="form-divider"></div>
+        <div class="form-section-title"><span class="form-step">03</span><div><h2>Your learning summary</h2><p>Connect the ideas across all three topics.</p></div></div>
+        <label class="field summary-field">
+            <span>What did you learn?</span>
+            <div class="summary-editor" aria-label="Summary editor">
+                <div class="summary-toolbar" role="toolbar" aria-label="Summary formatting tools">
+                    <div class="summary-tabs" role="tablist" aria-label="Summary editor tabs">
+                        <button type="button" class="summary-tab is-active" data-tab="write" role="tab" aria-selected="true" aria-controls="summary-write-panel">Write</button>
+                        <button type="button" class="summary-tab" data-tab="preview" role="tab" aria-selected="false" aria-controls="summary-preview-panel">Preview</button>
+                    </div>
+                    <div class="summary-format-tools" aria-label="Formatting shortcuts">
+                        <button type="button" class="format-btn" data-format="bold" title="Bold text">B</button>
+                        <button type="button" class="format-btn" data-format="italic" title="Italic text"><em>I</em></button>
+                        <button type="button" class="format-btn" data-format="list" title="Bullet list">• List</button>
+                    </div>
+                </div>
+                <div id="summary-write-panel" class="summary-panel is-active" data-panel="write" role="tabpanel">
+                    <textarea id="summary" name="summary" rows="7" maxlength="2000" placeholder="In your own words, explain Spring Core, Spring JDBC, and Hibernate..." required></textarea>
+                </div>
+                <div id="summary-preview-panel" class="summary-panel summary-preview-panel" data-panel="preview" role="tabpanel" hidden>
+                    <div id="summary-preview" class="summary-preview" aria-live="polite">Your markdown preview will appear here as you type.</div>
+                </div>
+            </div>
+        </label>
         <div class="summary-meta"><span>Explain concepts from at least two topics; topic names alone do not count.</span><strong id="word-count" aria-live="polite">0 / 100 words</strong></div>
         <div class="form-hint"><span aria-hidden="true">✦</span> Include concepts such as dependency injection, JdbcTemplate, RowMapper, ORM, or entities. Score: 1–49 relevant words = 5 · 50–89 = 7 · 90–99 = 9 · exactly 100 with all three topics = 10</div>
         <button class="button button-primary button-full" type="submit">Continue to verification <span aria-hidden="true">→</span></button>

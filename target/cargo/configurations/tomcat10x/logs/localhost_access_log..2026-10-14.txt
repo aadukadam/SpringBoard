@@ -1,0 +1,15 @@
+127.0.0.1 - - [14/Oct/2026:09:42:24 +0530] "GET /cargocpc/index.html HTTP/1.1" 200 124
+0:0:0:0:0:0:0:1 - - [14/Oct/2026:09:43:12 +0530] "HEAD /spring-learning-checkpoint/about.html HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [14/Oct/2026:09:43:20 +0530] "GET /spring-learning-checkpoint/test.html HTTP/1.1" 200 5772
+0:0:0:0:0:0:0:1 - - [14/Oct/2026:09:43:21 +0530] "GET /spring-learning-checkpoint/test.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [14/Oct/2026:09:43:21 +0530] "GET /spring-learning-checkpoint/styles.css HTTP/1.1" 200 17567
+0:0:0:0:0:0:0:1 - - [14/Oct/2026:09:43:50 +0530] "POST /spring-learning-checkpoint/verification.jsp HTTP/1.1" 200 4337
+0:0:0:0:0:0:0:1 - - [14/Oct/2026:09:43:50 +0530] "GET /spring-learning-checkpoint/styles.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [14/Oct/2026:09:44:29 +0530] "GET /spring-learning-checkpoint/about.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [14/Oct/2026:09:44:29 +0530] "GET /spring-learning-checkpoint/styles.css HTTP/1.1" 200 17567
+0:0:0:0:0:0:0:1 - - [14/Oct/2026:09:44:36 +0530] "GET /spring-learning-checkpoint/test.html HTTP/1.1" 200 5772
+0:0:0:0:0:0:0:1 - - [14/Oct/2026:09:44:36 +0530] "GET /spring-learning-checkpoint/test.js HTTP/1.1" 200 5138
+0:0:0:0:0:0:0:1 - - [14/Oct/2026:09:45:25 +0530] "POST /spring-learning-checkpoint/verification.jsp HTTP/1.1" 200 4325
+0:0:0:0:0:0:0:1 - - [14/Oct/2026:09:45:25 +0530] "GET /spring-learning-checkpoint/styles.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [14/Oct/2026:09:45:33 +0530] "GET /spring-learning-checkpoint/result.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [14/Oct/2026:09:45:33 +0530] "GET /spring-learning-checkpoint/result.js HTTP/1.1" 200 3927

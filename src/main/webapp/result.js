@@ -29,6 +29,7 @@ function renderResult(result) {
 
     const stats = makeElement("div", "result-stats");
     stats.append(makeElement("div", "result-stat", `${result.wordCount} words`));
+    stats.append(makeElement("div", "result-stat", result.course ? `${result.course} focus` : `${result.topics.length} / 3 topics matched`));
     stats.append(makeElement("div", "result-stat", `${result.topics.length} / 3 topics matched`));
 
     const matched = makeElement("div", "topic-pills");
