@@ -38,6 +38,18 @@ h1, h2, h3, p { margin-top: 0; }
 .button-primary { color: #fff; background: var(--green); }
 .button-primary:hover { background: var(--green-deep); }
 .button-secondary { color: var(--green-deep); border: 1px solid #dbe3da; background: white; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.course-link { margin-top: 14px; display: inline-flex; align-items: center; color: var(--green-deep); font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.course-shell { padding-bottom: 32px; }
+.course-card { margin-top: 22px; padding: 24px 24px 18px; }
+.course-header { display: flex; align-items: center; gap: 12px; }
+.course-header h2 { margin: 0; font-size: 16px; }
+.course-header p { margin: 4px 0 0; color: var(--muted); font-size: 10px; }
+.course-body { margin-top: 18px; }
+.course-body ul { margin: 0; padding-left: 18px; color: #465850; line-height: 2; font-size: 11px; }
+.course-actions { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-course-overview { min-height: 480px; }
+.hero-art-course { max-width: 420px; }
 .byline { margin: 20px 0 0; font-size: 11px; color: #87918a; }
 .byline strong { color: #526258; font-weight: 600; }
 .hero-art { height: 375px; max-width: 450px; width: 100%; position: relative; justify-self: end; display: grid; place-items: center; border-radius: 48% 52% 42% 58% / 49% 44% 56% 51%; background: #eef2e9; }
